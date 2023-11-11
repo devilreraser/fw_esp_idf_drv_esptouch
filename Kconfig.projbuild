@@ -1,3 +1,7 @@
 menu "Component drv_esptouch Configuration"
 
+    config DRV_ESPTOUCH_USE
+        bool "Use drv_esptouch component"
+        default y
+        
 endmenu

@@ -18,8 +18,6 @@ extern "C"
 /* *****************************************************************************
  * Header Includes
  **************************************************************************** */
-#include <sdkconfig.h>
-#if CONFIG_USE_WIFI
 #include <stdbool.h>   
 
 /* *****************************************************************************
@@ -56,8 +54,6 @@ bool drv_esptouch_is_started(void);
 void drv_esptouch_disconnected(void);
 void drv_esptouch_connected(void);
 void drv_esptouch_done(void);
-
-#endif //#if CONFIG_USE_WIFI
 
 #ifdef __cplusplus
 }

@@ -12,7 +12,7 @@
  * Header Includes
  **************************************************************************** */
 #include "drv_esptouch.h"
-#if CONFIG_USE_WIFI
+
 
 #include <string.h>
 #include <stdlib.h>
@@ -28,7 +28,7 @@
 #include "esp_netif.h"
 #include "esp_smartconfig.h"
 
-#include "drv_wifi_if.h"
+#include "drv_wifi.h"
 
 /* *****************************************************************************
  * Configuration Definitions
@@ -211,4 +211,3 @@ void drv_esptouch_done(void)
 {
     xEventGroupSetBits(s_esptouch_event_group, ESPTOUCH_DONE_BIT);
 }
-#endif //#if CONFIG_USE_WIFI
