@@ -20,7 +20,11 @@
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
 #include "esp_wifi.h"
+#if ESP_IDF_VERSION >= ESP_IDF_VERSION_VAL(5,2,0)
+#include "esp_eap_client.h"
+#else
 #include "esp_wpa2.h"
+#endif
 #include "esp_event.h"
 #include "esp_log.h"
 #include "esp_system.h"
